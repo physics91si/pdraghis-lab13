@@ -8,18 +8,18 @@ import unittest
 import calc
 
 class CalcTest(unittest.TestCase):
-    # TODO implement tests here to verify that your functions work!
+    
     def testAddition(self):
         self.assertEqual(calc.calc('1+1'), 2)
 
     def testSubtraction(self):
-        pass
+        self.assertEqual(calc.calc('11-10'), 1)
 
     def testMultiplciation(self):
-        pass
+        self.assertEqual(calc.calc('10*12'), 120)
  
     def testDivision(self):
-        pass
+        self.assertEqual(calc.calc('10/2'), 5)
 
 if __name__ == '__main__':
     unittest.main()
